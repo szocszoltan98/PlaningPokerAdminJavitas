@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    tools:context=".Fragments.AddQuestion">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <EditText
+            android:id="@+id/newQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_centerHorizontal="true"
+
+            android:inputType="textPersonName"
+            android:hint="New Question" />
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_below="@id/switch1"
+            android:layout_centerHorizontal="true"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADD" />
+
+
+
+        <Button
+            android:id="@+id/ShowQuestions"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/addButton"
+            android:text="Show Questions"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"/>
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_centerHorizontal="true"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Activ/Inactiv"
+            android:layout_below="@+id/GoToGroup" />
+
+    </RelativeLayout>
+
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
